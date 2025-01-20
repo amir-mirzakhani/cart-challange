@@ -1,0 +1,104 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+body {
+  margin: 3% 0;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 0%, 98%);
+}
+.title-box {
+  text-align: center;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.heading {
+  font-weight: 100;
+  color: hsl(234, 12%, 34%);
+}
+.headingTow {
+  font-weight: 600;
+  color: hsl(236, 10%, 27%);
+}
+.title-box p {
+  width: 50%;
+  line-height: 25px;
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+  margin: 0.2rem auto;
+}
+.cart-box {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Ensure equal space around items */
+}
+.box-item {
+  padding: 1.5rem;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-top: 5px solid hsl(180, 62%, 55%);
+  position: relative;
+  width: 30%;
+}
+.header-cart {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.title-cart {
+  width: 90%;
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin-bottom: 10%;
+}
+.icon-cart {
+  margin: 1rem 0 0 0.5rem;
+  display: flex;
+  justify-content: right;
+}
+.middel {
+  width: 30%;
+}
+.middel .box-item {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+#calc {
+  border-top: solid 5px hsl(212, 86%, 64%);
+}
+#karma {
+  border-top: solid 5px hsl(34, 97%, 64%);
+}
+#team {
+  border-top: solid 5px hsl(0, 78%, 62%);
+}
+@media (max-width:500px){
+  .title-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .title-box p{
+    width: 75%;
+  }
+  .cart-box{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .box-item{
+    width: 100%;
+  }
+  .middel{
+    width: 100%;
+  }
+}
